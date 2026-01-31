@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Mirel 🖤</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+<!-- Pantalla de bienvenida -->
+<section id="welcome" class="screen">
+  <h1>Feliz cumpleaños, Mirel 🎂</h1>
+  <p>Esto no es una página.<br>Es un pequeño universo para ti.</p>
+  <button id="enterBtn">Entrar ✨</button>
+</section>
+
+<!-- Pantalla principal -->
+<section id="main" class="screen hidden">
+  <header>
+    <h2>Tus ships favoritos 💗</h2>
+    <button id="musicToggle">🎶</button>
+  </header>
+
+  <div class="ships">
+    <div class="ship" data-text="Porque algunos vínculos no necesitan explicación">
+      <img src="ship1.jpeg" alt="Ship1" loading="lazy">
+    </div>
+    <div class="ship" data-text="Caótico pero real">
+      <img src="ship2.jpeg" alt="Ship2" loading="lazy">
+    </div>
+    <div class="ship" data-text="El que duele bonito">
+      <img src="ship3.jpeg" alt="Ship3" loading="lazy">
+    </div>
+    <div class="ship" data-text="Siempre ellos">
+      <img src="ship4.jpeg" alt="Ship4" loading="lazy">
+    </div>
+    <div class="ship" data-text="Ese que no superamos">
+      <img src="ship5.jpeg" alt="Ship5" loading="lazy">
+    </div>
+    <div class="ship" data-text="Universo alterno favorito">
+      <img src="ship6.jpeg" alt="Ship6" loading="lazy">
+    </div>
+  </div>
+
+  <button id="secretBtn">¿Un mensaje para ti? 🔒</button>
+</section>
+
+<!-- Modal de imagen -->
+<div id="modal" class="hidden">
+  <span id="closeModal">✕</span>
+  <img id="modalImg" alt="Ship ampliado">
+  <p id="modalText"></p>
+</div>
+
+<!-- Mensaje secreto -->
+<div id="secret" class="hidden">
+  <div class="secret-box">
+    <h3>💟 Para Mirel</h3>
+    <p>
+      Que nunca te falten historias que te hagan sentir viva,<br>
+      ships que te rompan y sanen el corazón<br>
+      y canciones que te entiendan cuando nadie más lo hace.
+    </p>
+    <button id="closeSecret">Cerrar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
